@@ -1,0 +1,90 @@
+body{
+    margin: 0;
+    font-family: Arial;
+    background: #f5f5f5;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    background: #333;
+    color: white;
+    padding: 15px;
+}
+.menu a {
+    color: white;
+    margin-left: 15px;
+    text-decoration: none;
+}
+.products{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px ;
+    padding: 20px;
+}
+.card{
+
+overflow: hidden;
+    background: white;
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 5px gray;
+    transition: 0.3s;
+}
+.card img{
+    width: 100%;
+}
+
+.card :hover{
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px gray;
+}
+button{
+    background: green;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+button :hover{
+    background: darkgreen;
+    
+}
+.footer{
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+@media(max-width: 768px ){
+    .products{
+        grid-template-columns: 1fr;
+    }
+    .header{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+h3{
+    background: green;
+    border: #333;
+    text-decoration: none;
+    border-radius: 15px;
+    box-shadow: 0 5px 10px gray;
+}
+
+.sidebar{
+
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 10px;
+    gap: 10px;
+  
+    
+}
+.sidebar ul {
+    font-size: 30px;
+    background: rgb(213, 184, 18);
+}
